@@ -1,6 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F1F48425-33DB-465D-9436-7C6D194B564A}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{F1F48425-33DB-465D-9436-7C6D194B564A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F1F48425-33DB-465D-9436-7C6D194B564A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Walk" ID="{134B4ACE-D594-4EED-8DED-989281A63069}" ShortID="877397931">
+					<ChildrenList>
+						<Event Name="Walk_By" ID="{5B037F33-F554-4E63-95CE-AD4B42A09486}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="21"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{F7EBD1BB-8FA6-4731-A2AC-41CF5045D836}" ShortID="605169501">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{59A982B8-B187-4CEC-9F75-0DF921318EF6}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Character_Footstep" ID="{093D1E89-6232-4AA6-A255-DCE37000C565}" WorkUnitID="{332C3415-00FD-49D0-8074-86E452763BC8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6628F5B8-DD84-4A0B-9F77-A8FEC1A9FF42}" ShortID="169004916">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5B17DD9C-CD61-4309-AF12-FB5C4B0FD692}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="0.2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Probability" Type="Real64" Value="80"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FLY_Gack_Player" ID="{C524C680-B037-42E2-BC39-9C582B9396B2}" WorkUnitID="{332C3415-00FD-49D0-8074-86E452763BC8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
